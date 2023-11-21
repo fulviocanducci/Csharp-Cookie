@@ -1,0 +1,9 @@
+@{ ViewData["Title"] = "Login"; }
+
+<div class="text-center">
+    <h1 class="display-4">Entrar</h1>
+    <form asp-action="Go" method="post" asp-controller="Login">
+        <input type="hidden" name="ReturnUrl" value="@(ViewBag?.ReturnUrl)"/>
+        <button type="submit" class="btn btn-primary btn-sm">Entrar</button>
+    </form>
+</div>
